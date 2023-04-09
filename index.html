@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Front-End</title>
+    <link rel="stylesheet" href="estilos.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="imgs/icone-da-pagina.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h1>Introdução ao <em>Front-end</em></h1>
+    <img src="imgs/pagina-web.jpg" id="pagina-web">
+    <p>Olá, hoje vou dar falar sobre as linguagens <em>front-end</em>.</p>
+    <p>O desenvolvedor <em>front-end</em> lida com tudo que o usuário interage, ou seja, os botões disponíveis para
+        clique, a parte visual e textual do site, o design, a navegação, os layouts, para que o usuário navegue pela
+        página sem problemas.</p>
+    <p>Veja um resumo sobre as três principais linguagens <em>front-end</em> e as características de cada uma:</p>
+    <table>
+        <thead>
+            <tr>
+                <th>Linguagens</th>
+                <th>O que faz</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>HTML</td>
+                <td>Define o significado e a estrutura do conteúdo da web.</td>
+            </tr>
+            <tr>
+                <td>CSS</td>
+                <td>Descreve a apresentação de um documento escrito em HTML (cores, tamanhos, etc).</td>
+            </tr>
+            <tr>
+                <td>JavaScript</td>
+                <td>Responsável por dar comportamento dinâmico a página.</td>
+            </tr>
+        </tbody>
+    </table>
+    <h2>Tópicos dessa página</h2>
+    <p>
+        <ol id="topicos">
+            <li>
+                <a href="#titulo-html">HTML - <em>Hipertext Markup Language</em></a>
+            </li>
+            <li>
+                <a href="#titulo-css">CSS - <em>Cascading Style Sheet</em></a>
+            </li>
+            <li>
+                <a href="#titulo-js">JS - <em>JavaScript</em></a>
+                <ol>
+                    <li><a href="#exemplos-js">Exemplos com JavaScript</a></li>
+                </ol>
+            </li>
+        </ol>
+    </p>
+    <h2 id="titulo-html">HTML</h2>
+    <img src="imgs/html.jpg" id="imagem-html">
+    <span id="texto-html">
+        <p><em>Hipertext Markup Language (HTML) </em>é o componente básico da Web, que estabelece a estrutura básica de
+            um Website.</p>
+        <p>Algumas das suas características:</p>
+        <ul id="caracteristicas-html">
+            <li>Não é uma linguagem de programação, por não possuir nenhum recurso de interação com o usuário.</li>
+            <li>Sem o <em>HTML</em>, o navegador não conseguiria exibir textos ou carregar outros conteúdos (imagens,
+                vídeos,
+                tabelas, etc).</li>
+            <li>É fácil de aprender, mesmo para quem está iniciando na programação.</li>
+            <li>Estruturado por tags como parágrafos, imagens, tabelas, listas, etc.</li>
+        </ul>
+    </span>
+    <h2 id="titulo-css">CSS</h2>
+    <img src="imgs/css.jpg" id="imagem-css">
+    <span id="texto-css">
+        <p><em>Cascading Style Sheet (CSS)</em>, ou em português, Folhas de Estilo em Cascatas.
+        <p>Representa a parte visual do
+            site, ou seja, fontes de texto (<em>Times New Roman</em>, <em>Arial</em>, <em>Courier New</em>, etc.),
+            cores,
+            etc., dando estilo ao <em>HTML</em> e personalizando o conteúdo que é visível para o usuário.</p>
+        </p>
+        <p>Outras características:</p>
+        <ul id="caracteristicas-css">
+            <li>Assim como <em>HTML</em>, <em>CSS</em> também não é uma linguagem de programação.</li>
+            <li>Permite controle do layout de vários <em>HTML</em> a partir de um único arquivo <em>CSS</em>.</li>
+            <li>Criação de designs responsivos, pensando na usabilidade em qualquer dispositivo eletrônico
+                (computadores, smartphones, tablets, etc.).</li>
+        </ul>
+    </span>
+    <h2 id="titulo-js">JavaScript</h2>
+    <img src="imgs/js.jpg" id="imagem-js">
+    <span id="texto-js">
+        <p><em>JavaScript (JS)</em> representa a parte dinâmica do site.</p>
+        <p>Características:</p>
+        <ul id="caracteristicas-js">
+            <li>Diferentemente de <em>HTML</em> e <em>CSS</em>, <em>JavaScript</em> é uma linguagem de programação.</li>
+            <li>Muito baseada em orientação a objetos.</li>
+            <li>Não é uma linguagem muito difícil, principalmente para quem já tem noção sobre a lógica de programação.</li>
+            <li>Linguagem bastante versátil, muito utilizada em projetos para desktop e dispositivos móveis.</li>
+        </ul>
+    </span>
+    <h3 id="exemplos-js">Exemplos com JS</h3>
+    <p>Veja alguns dos exemplos de operações que eu fiz com <em>JS</em>, caso precise ou queira se divertir.</p>
+    <ul>
+        <li>Para cada dois valores reais, realiza uma operação de acordo com a sua opção:</li>
+        <section id="operacao-com-dois-numeros">
+            <p>Para fazer essa operação, siga os seguintes passos:</p>
+            <ul>
+                <li>Coloque os dois números em cada um dos inputs.</li>
+                <li>No campo <em>Opção</em>, escolha uma das opções:
+                    <ul>
+                        <li>Opcão + para somar.</li>
+                        <li>Opção - para subtrair.</li>
+                        <li>Opção * para multiplicar.</li>
+                        <li>Opção / para dividir.</li>
+                        <li>Opção % para o resto da divisão.</li>
+                    </ul>
+                </li>
+                <li>Depois clique no botão "<em>Resolver</em> ".</li>
+            </ul> 
+            <ul>
+                <li>
+                    <label for="primeiro-numero">Digite o primeiro número real:</label>
+                    <input id="primeiro-numero" type="number" required>
+                </li>
+                <li>
+                    <label for="segundo-numero">Digite o segundo número real:</label>
+                    <input id="segundo-numero" type="number" required>
+                </li>
+                <li>
+                    <label for="opcao-operacoes">Opção:</label>
+                    <input id="opcao-operacoes" type="string"> 
+                </li>  
+                <button id="botao-resolver">Resolver</button><br>
+                <label for="resultado">Resultado:</label>
+                <input id="resultado" type="string" disabled>            
+        </section>
+        <li>Contar, em tempo real, o número de vezes que um botão foi clicado:</li>
+        <section id="conta-cliques">
+            <ul>
+                <li>Clique no botão <em>"Clique em mim!"</em>.</li>
+                <li>Veja, abaixo, o número de vezes que ele foi clicado.</li>
+                <li>Caso queira zerar o número de cliques, clique no botão <em>"Zerar cliques"</em></li>
+                <li>Se quiser diminuir o número de cliques, clique em <em>"Decrementar Cliques"</em>.</li>
+                <button id="botao-clique-em-mim">Clique em mim!</button>
+                <button id="botao-zerar-cliques">Zerar cliques</button>
+                <button id="botao-decrementar">Decrementar cliques</button>
+            </ul>
+        </section>
+        <li>Mostrar o horário e a data atual:</li>
+        <section id="tempo-atual">
+            <ul>
+                <li>Veja o horário e a data abaixo:</li>
+                <label for="data-e-hora-atual">Data e hora:</label>
+                <input id="data-e-hora-atual" type="string" disabled>
+            </ul>
+        </section>
+        <li>Resolver equações do segundo grau:</li>
+        <section id="equacoes-segundo-grau">
+            <ul>
+                <li>No campo opção, escolha:</li>
+                <ul>
+                    <li>1 para calcular o delta e saber a quantidade de raízes reais da equação.</li>
+                    <li>2 para calcular as raízes.</li>
+                    <li>3 para calcular os vértices da parábola no formato<em>(X, Y)</em>.</li>
+                </ul>
+                <li>Insira os coeficientes em cada um dos campos de entrada.</li>
+                <li>Depois clique no botão <em>"Resolver equação"</em>.</li>
+                <li><label for="opcao-equacoes">Opção:</label>
+                    <input id="opcao-equacoes" min="1" max="3" type="number"></li>
+                <li>Coeficientes:</li>
+                <li class="coeficientes">
+                    <label for="coeficiente-a">a:</label>
+                    <input type="number" id="coeficiente-a">
+                    <label for="coeficiente-b">b:</label>
+                    <input type="number" id="coeficiente-b">
+                    <label for="coeficiente-c">c:</label>
+                    <input type="number" id="coeficiente-c">
+                    <button id="resolver-equacao">Resolver equação</button>
+                </li>
+                <label for="resultado-equacoes">Resultado:</label>
+                <input type="string" id="resultado-equacoes" disabled>
+            </ul>
+        </section>
+    </ul>
+    <h3>Para saber mais:</h3>
+    <ol>
+        <li><a href="https://fegemo.github.io/cefet-front-end/">Laboratório de programação Web / Cefet-MG - Github</a></li>
+        <li><a href="https://blog.betrybe.com/javascript/">Javascript: o que é, aplicação e como aprender a linguagem JS</a></li>
+        <li><a href="https://www.hostinger.com.br/tutoriais/o-que-e-css-guia-basico-de-css">O que é CSS? Guia Básico para Iniciantes</a></li>
+        <li><a href="https://www.hostinger.com.br/tutoriais/o-que-e-html-conceitos-basicos">O que é HTML? Guia Básico para Iniciantes</a></li>
+    </ol>
+    <script src="js/operacoes.js"></script>
+</body>
+</html>
