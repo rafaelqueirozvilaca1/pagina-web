@@ -1,0 +1,266 @@
+html {
+    background-color: lightblue;
+
+}
+
+body {
+    overflow-x: hidden;
+}
+
+#pagina-web {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+}
+
+h1 {
+    color: rgba(131, 126, 126, 0.925);
+    text-align: center;
+    font-family: 'Delicious Handrawn', cursive;
+    font-size: 50px;
+    padding: 20px;
+}
+
+p, ul, ol {
+    font-size: 18px;
+    margin-left: 5%;
+    font-family: 'Raleway', sans-serif;
+    text-align: left;
+    margin-right: 5%;
+}
+
+table {
+    margin-left: 20%;
+    margin-right: 20%;
+    border-collapse: collapse;
+}
+
+td, th {
+    font-size: 19px;
+    padding: 10px;
+    border: 2px solid black;
+    font-family: 'Raleway', sans-serif;
+}
+
+tbody {
+    background-color: rgba(255, 255, 255, 0.397);
+}
+
+thead {
+    background-color: rgb(147, 167, 209);
+} 
+
+h2 {
+    color: rgba(131, 126, 126, 0.925);
+    font-family: 'Delicious Handrawn', cursive;
+    font-size: 40px;
+    margin-left: 10%;
+    text-align: center;
+}
+
+#imagem-html, #imagem-js {
+    border-radius: 50%;
+    margin-left: 5%;
+    float: left;
+    padding: 30px;
+}
+
+/* faz as imagens flutuarem na tela */  
+#imagem-html, #imagem-css, #imagem-js {
+    position: relative;
+    animation: flutuar .9s ease-in-out 3s infinite alternate;
+}
+
+@keyframes flutuar {
+    from {
+        top: 0;
+    }
+    to {
+        top: -100px;
+    }
+}
+
+#texto-html, #texto-css {
+    text-align: center;
+}
+
+#caracteristicas-html, #caracteristicas-js {
+    margin-left: 22.5%;
+}
+
+#titulo-css, #titulo-js {
+    padding-top: 30px;
+}
+
+#imagem-css {
+    border-radius: 70%;
+    margin-left: 5%;
+    float: left;
+    padding: 30px;
+}   
+
+li {
+    margin: 10px;
+}
+
+#caracteristicas-css {
+    margin-left: 27%;
+}
+
+h3 {
+    color: rgba(131, 126, 126, 0.925);
+    font-family: 'Delicious Handrawn', cursive;
+    font-size: 35px;
+    margin-left: 10%;
+    text-align: left;
+    margin-top: 100px;
+}
+
+section {
+    background-color: rgba(122, 201, 122, 0.753);
+    padding: 10px;
+}
+
+#primeiro-numero, #segundo-numero, #opcao-operacoes {
+    width: 3em;
+    height: 30px;
+    font-size: 20px;
+}
+
+button {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    text-decoration: underline;
+}
+
+button:active {
+    color: royalblue;
+}
+
+#data-e-hora-atual {
+    font-size: 25px;
+    width: 7em;
+}
+
+#botao-clique-em-mim {
+    width: 300px;
+    height: 50px;
+}
+
+#primeiro-numero:focus, #segundo-numero:focus, #opcao-operacoes:focus {
+    outline: 3px rgb(100, 100, 73) solid;
+} 
+
+#botao-zerar-cliques {
+    width: 200px;
+    margin: 5px;
+}
+
+input, select, #botao-zerar-cliques, #botao-clique-em-mim, #botao-decrementar {
+    background-color:rgba(255, 255, 255, 0.644);
+    text-align: center;
+    margin: 10px;
+}
+
+#botao-decrementar {
+    width: 200px;
+    margin: 5px;
+}
+
+#resultado, #data-e-hora-atual {
+    font-size: 20px;
+    width: 30em;
+}
+
+#botao-resolver {
+    margin-left: 5px;
+    display: inline;
+}
+
+#coeficiente-a, #coeficiente-b, #coeficiente-c, #opcao-equacoes {
+    height: 25px;
+    font-size: 20px;
+    width: 90px;
+}
+
+#resolver-equacao {
+    font-size: 18px;
+    text-align: center;
+    margin-right: 10%;
+    height: 30px;
+}
+
+.coeficientes {
+    list-style-type: none;
+}
+
+#resultado-equacoes {
+    height: 30px;
+    font-size: 20px;
+    width: 30em;
+}
+
+#coeficiente-a:focus, #coeficiente-b:focus, #coeficiente-c:focus, #opcao-equacoes:focus {
+    outline: 2px rgb(141, 112, 59) solid;
+}
+
+a:hover {
+    color: purple;
+}
+
+a:active {
+    color: rgb(7, 3, 1);
+}
+
+a:visited {
+    color: rgb(249, 122, 122);
+}
+
+#topicos {
+    margin-left: 30%;
+    margin-right: 30%;
+    padding-bottom: 5%;
+}
+
+#operacao li {
+    margin-left: -5px;
+    display: inline-block;
+}
+
+.resultado {
+    list-style-type: none;
+}
+
+#opcao-operacoes {
+    width: 10em;
+}
+
+.coeficientes {
+    align-items: center;
+}
+
+html.selecionado, section.selecionado, tr.selecionado {
+    background-color: rgba(0, 0, 0, 0.863);
+    color: rgba(255, 255, 255, 0.66);
+}
+
+#cabecalho-tabela.selecionado {
+    background-color: rgba(0, 0, 0, 0.772);
+    color: rgba(255, 255, 255, 0.829);
+}
+
+h1.selecionado, h2.selecionado, h3.selecionado {
+    color: rgba(255, 255, 255, 0.829);
+}
+
+#limpar-input {
+    margin: -100px; 
+}
+
+.botoes {
+    display: inline;
+}
