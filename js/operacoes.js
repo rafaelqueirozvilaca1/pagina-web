@@ -15,29 +15,32 @@ let botaoResolverEl = document.querySelector('#botao-resolver');
 botaoResolverEl.addEventListener('click', realizandoOperacao);
 function realizandoOperacao() {
 
-    let primeiroNumero = primeiroNumeroEl.value; // pega o primeiro número digitado pelo usuário
-    let segundoNumero = segundoNumeroEl.value; // pega o segundo número digitado pelo usuário
-    let opcao = opcaoEl.value; // pega a opção digitada pelo usuário
-
-    if (!primeiroNumero || !segundoNumero) {
+    if (!primeiroNumeroEl.value || !segundoNumeroEl.value) {
         alert ('Preencha corretamente todos os campos de entrada');
         return;
     }
-    switch (opcao) {
+
+    let soma = somaNumeros(primeiroNumeroEl.value, segundoNumeroEl.value);
+    let subtracao = subtraiNumeros (primeiroNumero, segundoNumero);
+    let produto = multiplicaDoisNumeros (primeiroNumero, segundoNumero);
+    let divisao = divideDoisNumeros (primeiroNumero, segundoNumero);
+    let resto = restoDivisao (primeiroNumero, segundoNumero);
+
+    switch (opcaoEl.value) {
         case '+': 
-            resultadoEl.value = `Soma = ${somaNumeros(primeiroNumero, segundoNumero)}`; // realiza a soma se opção digitada for "+".
+            resultadoEl.value = `Soma = ${soma}`; // realiza a soma se opção digitada for "+".
             break;
         case '-': 
-            resultadoEl.value = `Resultado da subtração = ${subtraiNumeros (primeiroNumero, segundoNumero)}`; // realiza a subtração se opção digitada for "-".
+            resultadoEl.value = `Resultado da subtração = ${subtracao}`;
             break;
         case '*': 
-            resultadoEl.value = `Produto = ${multiplicaDoisNumeros (primeiroNumero, segundoNumero)}`; // realiza a multiplicação se opção digitada for "*".
+            resultadoEl.value = `Produto = ${produto}`; // realiza a multiplicação se opção digitada for "*".
             break;
         case '/': 
-            resultadoEl.value = `Quociente = ${divideDoisNumeros (primeiroNumero, segundoNumero)}`; // realiza a divisão se opção digitada for "-".
+            resultadoEl.value = `Quociente = ${divisao}`; // realiza a divisão se opção digitada for "-".
             break;
         case '%': 
-            resultadoEl.value = `Resto da divisão = ${restoDivisao (primeiroNumero, segundoNumero)}`; // realiza a soma se opção digitada for "+".
+            resultadoEl.value = `Resto da divisão = ${resto}`; // realiza a soma se opção digitada for "+".
             break;
         default: 
             alert ('Opção inválida'); // se a opção digitada for diferente das mencionadas acima, imprime mensagem de alerta avisando que a opção é inválida.
