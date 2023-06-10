@@ -63,25 +63,31 @@ function botaoEnterClicado (e) {
 // função que conta o número de vezes que o botão "Clique em mim!" foi clicado
 let contaCliques = 0; // inicializa o numero de cliques
 
+function mostrarMensagem (botao, contaCliques) {
+    return botao.innerHTML = `Botão Clique em mim! foi clicado ${contaCliques} vezes`;
+}
+
 let botaoCliqueEmMimEl = document.querySelector ('#botao-clique-em-mim');
 botaoCliqueEmMimEl.addEventListener ('click',  (e) => { 
+    let botaoRecuperadoEl = e.currentTarget;
     contaCliques++; // conta quantas vezes o botão foi clicado
-    e.currentTarget.innerHTML = `Botão Clique em mim! foi clicado ${contaCliques} vezes`; // recupera o botão clicado e altera o seu conteúdo
+    mostrarMensagem (botaoRecuperadoEl, contaCliques); // recupera o botão clicado e altera o seu conteúdo
 });
 
 let botaoClicadoEl = document.querySelector ('#botao-clique-em-mim'); //seleciona o botão "Clique em Mim!"
+
 // função que zera o número de cliques do botão "Clique em mim!"
 let botaoZerarCliquesEl = document.querySelector ('#botao-zerar-cliques');
 botaoZerarCliquesEl.addEventListener ('click', () => {
     contaCliques = 0; // zera o número de cliques
-    botaoClicadoEl.innerHTML = `Botão Clique em mim! foi clicado ${contaCliques} vezes`;
+    mostrarMensagem (botaoClicadoEl, contaCliques);
 });
 
 // função que decrementa o número de cliques
 let botaoDecrementarEl = document.querySelector ('#botao-decrementar');
 botaoDecrementarEl.addEventListener ('click', () => {
     contaCliques--; // decrementa o número de cliques
-    botaoClicadoEl.innerHTML = `Botão Clique em mim! foi clicado ${contaCliques} vezes`;
+    mostrarMensagem (botaoClicadoEl, contaCliques);
 });
 
 // ----------------------------------------------------------------------------------------------------
