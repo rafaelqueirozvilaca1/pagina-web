@@ -1,3 +1,2 @@
 # Pagina-web
-Uma página Web sobre as linguagens front-end: 
-https://rafaelqueirozvilaca1.github.io/pagina-web/
+<a href="https://rafaelqueirozvilaca1.github.io/pagina-web/">Uma página Web sobre as linguagens front-end:</a> 
